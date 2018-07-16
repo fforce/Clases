@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import RelojApp from './clase05/EJERCICIO';
+import NotasApp from './clase04/NotasApp';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<RelojApp />, document.getElementById('root'));
+ReactDOM.render(<NotasApp />, document.getElementById('root'));
 registerServiceWorker();
