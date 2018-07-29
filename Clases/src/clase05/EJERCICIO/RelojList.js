@@ -13,7 +13,11 @@ class RelojList extends Component {
     render() {
         const { date } = this.props;
         const { onClickSelected } = this.props;
-        const printRelogs = this.props.relojs.map((item, i) => <Reloj key={i} selected={item.selected} titulo={item.titulo} hora={this.setReloj(date, item.offset)} onClickSelected={onClickSelected(item)} />)
+        const { tituloSelected } = this.props;
+        const printRelogs = this.props.relojs.map((item, i) =>
+          <Reloj key={i} selected={item.selected} titulo={item.titulo} hora={this.setReloj(date, item.offset)}
+             onClickSelected={()=>onClickSelected(item)}  classSelected={item.titulo == tituloSelected ? "selected" :"" }  />
+           )
 
         return (
             <React.Fragment>

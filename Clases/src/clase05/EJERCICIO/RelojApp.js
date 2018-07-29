@@ -8,6 +8,7 @@ class RelojApp extends Component {
         super(props);
         this.state = {
             date: new Date(),
+            tituloSelected:"",
             notas: [
                 {
                     titulo: "Buenos Aires",
@@ -33,7 +34,7 @@ class RelojApp extends Component {
         };
     }
 
-    handleOnClickSelected = (relog) => event => {
+    handleOnClickSelected = (relog) => {
 
         const newState = [...this.state.notas];
 
@@ -53,6 +54,16 @@ class RelojApp extends Component {
 
     }
 
+    handleOnClickSelectedString = (reloj) => {
+      this.setState(
+        {
+          tituloSelected : reloj.titulo
+        }
+      )
+
+    }
+
+
     componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(),
@@ -70,7 +81,7 @@ class RelojApp extends Component {
     render() {
 
         return (
-            <RelojList relojs={this.state.notas} date={this.state.date} onClickSelected={this.handleOnClickSelected} />
+            <RelojList relojs={this.state.notas} tituloSelected={this.state.tituloSelected} date={this.state.date} onClickSelected={this.handleOnClickSelectedString} />
         )
     }
 
