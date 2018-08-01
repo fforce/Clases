@@ -1,8 +1,1 @@
 export const CHANGE_DRAFT = 'CHANGE_DRAFT'
-
-export const ADD_TODO = 'ADD_TODO'
-export const TOGGLE_TODO = 'TOGGLE_TODO'
-export const CHANGE_TODO = 'CHANGE_TODO'
-export const DESTROY_TODO = 'DESTROY_TODO'
-
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'

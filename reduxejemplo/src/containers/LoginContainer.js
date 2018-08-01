@@ -1,4 +1,4 @@
-import login from "../components/login"
+import Login from "../components/login"
 import {connect} from "react-redux"
 import {CHANGE_DRAFT} from '../constants/actionTypes'
 
@@ -16,4 +16,4 @@ const mapDispatchsToProps = (dispatch) => ({
     //onChangeDraft: value => dispatch(draft(value)) // me atiende mas facil
 })
 
-export default connect(mapStateToProps, mapDispatchsToProps)(login)
+export default connect(mapStateToProps, mapDispatchsToProps)(Login)

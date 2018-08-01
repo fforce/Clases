@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import TodoApp from './containers/TodoAppContainer'
 import LoginApp from "./containers/LoginContainer"
 
 class App extends Component {

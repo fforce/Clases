@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
-import todo from './todo'
-import draft from './draft'
-import filter from './filter'
+
+import loginReducer from './loginReducer'
+
 //este estado lo maneja tal reducer
 const rootReducer = combineReducers({
-  todo,
-  draft: draft,
-  filter
+
+  loginReducer
+
 })
 
 export default rootReducer
