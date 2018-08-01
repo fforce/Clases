@@ -1,1 +1,3 @@
 export const CHANGE_DRAFT = 'CHANGE_DRAFT';
+
+export const SET_LOGUIN_STATUS = 'SET_LOGUIN_STATUS';

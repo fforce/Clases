@@ -8,6 +8,7 @@ export const changeDraft = draft => ({
   draft
 })
 
+
 export const getDraft = draft => ({
   type: CHANGE_DRAFT,
   draft
