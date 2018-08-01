@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 
-import loginReducer from './loginReducer'
-import userReduce from './userReduce'
+import LoginReducer from './LoginReducer'
+import UserReduce from './UserReduce'
 //este estado lo maneja tal reducer
 const rootReducer = combineReducers({
-    loginReducer,
-    userReduce
+    LoginReducer,
+    UserReduce
     
 })
 

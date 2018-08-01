@@ -5,7 +5,7 @@ import {
   
   const isLogued = false
   
-  const userReduce = (state = isLogued, action) => {
+  const UserReduce = (state = isLogued, action) => {
     debugger;
     switch (action.type) {
       case SET_LOGUIN_STATUS:
@@ -15,5 +15,5 @@ import {
     }
   }
   
-  export default userReduce
+  export default UserReduce
   
