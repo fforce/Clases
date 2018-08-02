@@ -1,0 +1,4 @@
+ejecuto in action creator q me devuelve una funcion thung q hace una llamada a la api y en el the dispacho otra accion
+
+
+--- ir al package jason y si agregas "proxi" te dice .  pagina now
