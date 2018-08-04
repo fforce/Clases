@@ -4,7 +4,7 @@ import {
   
   const initialState = ''
   
-  const loginReducer = (state = initialState, action) => {
+  const LoginReducer = (state = initialState, action) => {
     debugger;
     switch (action.type) {
       case CHANGE_DRAFT:
@@ -14,5 +14,5 @@ import {
     }
   }
   
-  export default loginReducer
+  export default LoginReducer
   
